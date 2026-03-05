@@ -168,7 +168,7 @@ function Home() {
           )}
           <Link to="/profile">
             <img
-              src="/src/assets/profile.jpg"
+              src="/profile.jpg"
               alt="Profile"
               className="rounded-circle"
               width="40"
