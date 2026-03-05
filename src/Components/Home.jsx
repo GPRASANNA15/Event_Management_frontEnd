@@ -113,6 +113,7 @@ function Home() {
     try{
     const res=await addRegistration(data);
     console.log(res);
+      alert("registered Successfully");
     }
     catch(err)
     {
