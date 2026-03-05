@@ -291,7 +291,7 @@ function Home() {
               <div className="card-body text-center">
 
                 <img
-                  src={`https://eventmanagement-production-2b1d.up.railway.app/${det.profileUrl}`}
+                  src={`https://eventmanagement-production-2b1d.up.railway.app/files/${det.profileUrl}`}
                   alt="Profile Picture"
                   className="rounded-circle mb-3"
                   width="120"
