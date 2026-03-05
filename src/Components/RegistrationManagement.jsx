@@ -17,15 +17,15 @@ function RegistrationManagement() {
                 {details.length>0?(
                 <div className="card" style="max-width: 400px; margin:auto;">
                  {details.map(det=>(
-                    <div className="card-body">
+                    <div className="card-body" key={det.id}>
                         <h5 className="card-title text-center mb-3">Registration Details</h5>
 
-                        <p><strong>Registered ID:</strong> {det.registeredId}</p>
-                        <p><strong>Event Title:</strong> {det.eventName}</p>
-                        <p><strong>Registered At:</strong> {det.registeredAt}</p>
-                        <p><strong>User name:</strong>{det.userName} </p>
+                        <p><strong>Registered ID:</strong> {det.registeredId ? "N/A"}</p>
+                        <p><strong>Event Title:</strong> {det.eventName ? "N/A"}</p>
+                        <p><strong>Registered At:</strong> {det.registeredAt ? "N/A"}</p>
+                        <p><strong>User name:</strong>{det.userName?"N/A"} </p>
                         <p>
-                            <strong>Status:</strong><span className="badge bg-primary">{det.status}</span>
+                            <strong>Status:</strong><span className="badge bg-primary">{det.status?"N/A"}</span>
                         </p>
                     
 
