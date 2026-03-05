@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL="http://localhost:8080/events";
+const BASE_URL="https://eventmanagement-production-2b1d.up.railway.app/events";
 const token=localStorage.getItem("token");
 export const addEvent=async(data)=>{
     return axios.post(`${BASE_URL}/add`,data,{

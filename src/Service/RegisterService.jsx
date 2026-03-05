@@ -1,6 +1,6 @@
 import axios from "axios";
 const token=localStorage.getItem("token");
-const BASE_URL="http://localhost:8080/register";
+const BASE_URL="https://eventmanagement-production-2b1d.up.railway.app/register";
 export const addRegistration=async(data)=>{
     return axios.post(`${BASE_URL}/add`,data,{
         headers:{

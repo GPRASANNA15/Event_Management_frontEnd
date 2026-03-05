@@ -1,6 +1,6 @@
 import axios from "axios";
 const token=localStorage.getItem("token");
-const BASE_URL="http://localhost:8080/speaker"
+const BASE_URL="https://eventmanagement-production-2b1d.up.railway.app/speaker"
 export const addSpeaker=async(data)=>{
     return axios.post(`${BASE_URL}/add`,data,{
         headers:{
