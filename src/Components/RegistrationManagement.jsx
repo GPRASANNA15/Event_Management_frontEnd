@@ -15,7 +15,7 @@ function RegistrationManagement() {
         <>
             <div className="container mt-4">
                 {details.length>0?(
-                <div className="card" style={{"max-width: 400px, margin:auto"}}>
+                <div className="card" style={{max-width: "400px", margin:"auto"}}>
                  {details.map(det=>(
                     <div className="card-body" key={det.id}>
                         <h5 className="card-title text-center mb-3">Registration Details</h5>
